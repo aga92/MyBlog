@@ -1,4 +1,8 @@
 MyBlog::Application.routes.draw do
+  resources :posts
+
+  resources :categories
+
   resources :comments
 
     root 'application#index'
